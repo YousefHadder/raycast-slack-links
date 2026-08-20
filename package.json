@@ -12,6 +12,7 @@
       "name": "copy-slack-link",
       "title": "Copy Slack Link from Clipboard URL",
       "description": "Fetches the page title for the URL on your clipboard and copies an HTML anchor with the raw URL as plain-text fallback",
+      "icon": "icon.png",
       "mode": "no-view"
     }
   ],
