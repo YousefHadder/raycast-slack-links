@@ -1,6 +1,13 @@
-# Slack Link Formatter
+# Slack Link Formatter for Raycast
 
-Convert a URL on your clipboard into a rich title hyperlink that pastes cleanly into Slack.
+A Raycast extension that converts a URL on your clipboard into a rich title hyperlink that pastes cleanly into Slack.
+
+## Prerequisites
+
+- macOS with [Raycast](https://www.raycast.com/) installed.
+- A URL copied to your clipboard before running the command.
+- Optional: [GitHub CLI](https://cli.github.com/) installed and authenticated with `gh auth login` for better titles on GitHub pull request and issue links.
+- For local development: Node.js and npm.
 
 ## How It Works
 
@@ -20,3 +27,19 @@ Slack prefers the HTML representation and shows a clickable title hyperlink. App
 For GitHub pull requests and issues, the command first tries to use the GitHub CLI (`gh`) to fetch the title when `gh` is installed and authenticated. This helps with links that do not expose complete page metadata to unauthenticated requests.
 
 If `gh` is unavailable or the lookup fails, the command falls back to fetching the page HTML directly.
+
+## Development
+
+Install dependencies and run the extension locally:
+
+```bash
+npm install
+npm run dev
+```
+
+Validate before publishing:
+
+```bash
+npm run lint
+npm run build
+```

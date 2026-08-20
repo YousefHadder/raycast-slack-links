@@ -2,7 +2,7 @@
   "$schema": "https://www.raycast.com/schemas/extension.json",
   "name": "slack-link-formatter",
   "title": "Slack Link Formatter",
-  "description": "Convert a clipboard URL into a rich title hyperlink for Slack",
+  "description": "A Raycast extension that converts a clipboard URL into a rich title hyperlink for Slack",
   "icon": "icon.png",
   "author": "yousefhadder",
   "categories": ["Productivity", "Web"],
